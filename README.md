@@ -35,6 +35,10 @@ output "yahoo_password" {
   value     = data.op_item.yahoo.password
   sensitive = true
 }
+
+output "yahoo_field_value" {
+  value = data.op_item.yahoo.fields["my-label"]
+}
 ```
 
 ## Run locally for development
