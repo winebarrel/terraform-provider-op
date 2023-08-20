@@ -9,6 +9,10 @@ terraform {
 provider "op" {
 }
 
+data "op_item" "yahoo" {
+  title = "yahoo"
+}
+
 output "yahoo_username" {
   value = data.op_item.yahoo.username
 }
