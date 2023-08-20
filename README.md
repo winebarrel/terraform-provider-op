@@ -5,6 +5,7 @@ Terraform provider for [1Password CLI](https://developer.1password.com/docs/cli/
 ## Preparation
 
 Install 1Password CLI.
+
 see https://developer.1password.com/docs/cli/get-started/
 
 ## Usage
