@@ -26,10 +26,10 @@ func NewClient(cmd string) (*Client, error) {
 }
 
 func (client *Client) GetItem(idOrTitle string, options ...string) (*Item, error) {
-	cmdArgs := []string{client.command, idOrTitle, "--format", "json"}
+	cmdArgs := []string{client.command, "item", "get", idOrTitle, "--format", "json"}
 	cmdArgs = append(cmdArgs, options...)
 
-	cmd := exec.Command(cmdArgs[0], cmdArgs[:1]...)
+	cmd := exec.Command(cmdArgs[0], cmdArgs[1:]...)
 	var outbuf, errbuf bytes.Buffer
 	cmd.Stdout = &outbuf
 	cmd.Stderr = &errbuf

@@ -1,0 +1,4 @@
+/terraform-provider-op
+/*.tf
+/*.tfstate*
+/dev.tfrc

@@ -1,0 +1,19 @@
+terraform {
+  required_providers {
+    op = {
+      source = "winebarrel/op"
+    }
+  }
+}
+
+provider "op" {
+}
+
+output "yahoo_username" {
+  value = data.op_item.yahoo.username
+}
+
+output "yahoo_password" {
+  value     = data.op_item.yahoo.password
+  sensitive = true
+}
