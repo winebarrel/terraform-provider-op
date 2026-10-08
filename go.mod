@@ -2,7 +2,7 @@ module github.com/winebarrel/terraform-provider-op
 
 go 1.25.8
 
-toolchain go1.27.1
+toolchain go1.27.2
 
 require github.com/hashicorp/terraform-plugin-sdk/v2 v2.40.1
 
